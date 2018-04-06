@@ -4,6 +4,7 @@
 用数组来保存出现的位置，每当匹配到时i设为匹配下标，j置0
 
 # 改之前的
+```java
   public static int kmp(String str, String dest,int[] next){//str文本串  dest 模式串
     	//List al=new ArrayList<>();
         for(int i = 0, j = 0; i < str.length(); i++){
@@ -25,10 +26,10 @@
         return 0;
         //return al;
     }
-
+```
 
 # 这个改之后的
-
+```java
 public class KMP {
     public static List kmp(String str, String dest,int[] next){//str文本串  dest 模式串
     	List al=new ArrayList<>();
@@ -77,7 +78,7 @@ public class KMP {
        // System.out.println(next.length);
     }
 }
-
+```
 
 
 
